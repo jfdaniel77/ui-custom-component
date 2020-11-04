@@ -16,7 +16,7 @@ export const removeProperties = (objectData: any[]): IObjectData[] => {
                 if (property.objectData) {
                     property.objectData = removeProperties(property.objectData);
                 }
-                return property;
+                return property;  
             });
         }
 
